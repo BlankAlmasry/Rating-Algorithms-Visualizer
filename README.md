@@ -8,5 +8,5 @@ the supported algorithms are:
 - [Elo](https://en.wikipedia.org/wiki/Elo_rating_system)
 - [TrueSkill](https://en.wikipedia.org/wiki/TrueSkill)
 - [Dwz](https://en.wikipedia.org/wiki/Dwz_rating_system)
-- [ECF]()
-- [Fire🔥]()
+- [ECF](https://en.wikipedia.org/wiki/ECF_grading_system)
+- Fire🔥
