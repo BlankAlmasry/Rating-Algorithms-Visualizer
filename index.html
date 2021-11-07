@@ -10,11 +10,11 @@
 <script src="d3.js"></script>
 <script>
   console.log(dataOri);
-  const width = 1200, height = 600, margin = { top: 20, bottom: 0, left: 50, right: 100 };
+  const width = 1200, height = 600, margin = { top: 20, bottom: 0, left: 140, right: 100 };
   const chartWidth = width - (margin.left + margin.right), chartHeight = height - (margin.top + margin.bottom);
   const data = [];
   const count = 15;
-  const duration = 2000;
+  const duration = 800;
   const barPadding = 20;
   const barHeight = (chartHeight - (barPadding * count)) / count;
   const getDate = () => dataOri[0][dateIndex];
@@ -95,8 +95,8 @@
     dateTitle = svg.append('text')
       .classed('date-title', true)
       .text(date)
-      .attr('x', chartWidth - margin.top)
-      .attr('y', chartHeight - margin.left)
+      .attr('x', chartWidth+100)
+      .attr('y', chartHeight)
       .attr('fill', 'rgb(128, 128, 128)')
       .attr('font-size', 40)
       .attr('text-anchor', 'end')
