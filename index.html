@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Rating Algorithms Visualizer</title>
+    <link rel="icon" href=
+            "/icon.png"
+          type="image/x-icon">
     <style>
-        .speed-btns {
+        .algo-btns {
             margin-bottom: 10px;
         }
 
@@ -31,11 +34,8 @@
     </style>
 </head>
 <body>
-<div class="speed-btns btns">
-    <button class="btn btn-default" onclick="changeSpeed(1100)">Slow</button>
-    <button class="btn btn-default" onclick="changeSpeed(800)">Normal</button>
-    <button class="btn btn-default" onclick="changeSpeed(500)">Fast</button>
-</div>
+<h3 style="display: flex; justify-content: center; padding: 0; margin: 0; margin-bottom: 5px">Rating Algorithms
+    Visualizer</h3>
 <div class="algo-btns btns">
     <button id="Glicko-2" onclick="changeData('glicko1')" class="btn btn-primary">
         Glicko-2
@@ -56,6 +56,12 @@
         Elo
     </button>
 </div>
+<div class="speed-btns btns">
+    <button class="btn btn-default" onclick="changeSpeed(1100)">Slow</button>
+    <button class="btn btn-default" onclick="changeSpeed(800)">Normal</button>
+    <button class="btn btn-default" onclick="changeSpeed(500)">Fast</button>
+</div>
+
 <div id="chart"></div>
 <script src="data/glicko1_data.js"></script>
 <script src="data/glicko2_data.js"></script>
