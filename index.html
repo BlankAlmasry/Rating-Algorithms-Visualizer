@@ -3,6 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <style>
+  .speed-btns{
+    margin-bottom: 10px;
+  }
+  .btns {
+  display: flex;
+  justify-content: center;
+  }
+  .btn {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 0 3px;
+    border-radius: 3px;
+
+  }
+
+  #chart {
+    display: flex;
+    justify-content: center;
+  }
+
+
+</style>
 </head>
 <body>
 <div class="speed-btns btns">
@@ -38,30 +62,7 @@
 <script src="data/dwz_data.js"></script>
 <script src="data/elo_data.js"></script>
 <script src="d3.js"></script>
-<style>
-  .speed-btns{
-    margin-bottom: 10px;
-  }
-  .btns {
-  display: flex;
-  justify-content: center;
-  }
-  .btn {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    margin: 0 3px;
-    border-radius: 3px;
 
-  }
-
-  #chart {
-    display: flex;
-    justify-content: center;
-  }
-
-
-</style>
 <script>
   let dataOri = elo_data
   let duration = 800
