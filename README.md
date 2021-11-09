@@ -1,5 +1,5 @@
-# Rating Algorithms Visualizer
-# Description
+# [Rating Algorithms Visualizer](https://rating-visualizer.netlify.app/)
+## Description
 This is a web application that allows you to visualize the rating algorithms.
 
 the supported algorithms are:
