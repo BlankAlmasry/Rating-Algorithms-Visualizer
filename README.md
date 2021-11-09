@@ -9,4 +9,5 @@ the supported algorithms are:
 - [TrueSkill](https://en.wikipedia.org/wiki/TrueSkill)
 - [Dwz](https://en.wikipedia.org/wiki/Dwz_rating_system)
 - [ECF](https://en.wikipedia.org/wiki/ECF_grading_system)
+- [Openskill](https://en.wikipedia.org/wiki/Open_skill_rating_system)
 - Fire🔥
