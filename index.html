@@ -55,6 +55,12 @@
     <button id="Elo" onclick="changeData('elo')" class="btn btn-primary">
         Elo
     </button>
+    <button id="Openskill" onclick="changeData('openskill')" class="btn btn-primary">
+        Openskill(BradleyTerry)
+    </button>
+    <button id="Fire" onclick="changeData('fire')" class="btn btn-primary">
+        Fire🔥
+    </button>
 </div>
 <div class="speed-btns btns">
     <button class="btn btn-default" onclick="changeSpeed(1100)">Slow</button>
@@ -69,6 +75,8 @@
 <script src="data/ecf_data.js"></script>
 <script src="data/dwz_data.js"></script>
 <script src="data/elo_data.js"></script>
+<script src="data/openskill_data.js"></script>
+<script src="data/fire_data.js"></script>
 <script src="d3.js"></script>
 
 <script>
@@ -92,6 +100,11 @@
             dataOri = dwz_data
         } else if (algo === "glicko1") {
             dataOri = glicko1_data
+        } else if (algo === "openskill") {
+            dataOri = openskill_data
+        } else if (algo === "fire") {
+            dataOri = fire_data
+            document.querySelector('#Fire').textContent = "Fire🔥 measures-momentum, yep i made that abomination "
         } else {
             dataOri = elo_data
         }
