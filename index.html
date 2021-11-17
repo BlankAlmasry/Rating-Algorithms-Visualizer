@@ -7,13 +7,19 @@
             "/icon.png"
           type="image/x-icon">
     <style>
-        html :not(#chart){
+        html :not(#chart) :not(h3) {
             font-family: sans-serif;
             font-size: 12px;
         }
-        .date-title{
-            font-size: 30px!important;
+
+        h3 {
+            font-family: sans-serif;
         }
+
+        .date-title {
+            font-size: 30px !important;
+        }
+
         .algo-btns {
             margin-bottom: 10px;
         }
@@ -36,14 +42,15 @@
             display: flex;
             justify-content: center;
         }
-        .hover{
+
+        .hover {
             background-color: #035ba2;
         }
 
     </style>
 </head>
 <body>
-<h3 style="display: flex; justify-content: center; padding: 0; margin: 0; margin-bottom: 5px">Rating Algorithms
+<h3 style="display: flex; justify-content: center; padding: 0; margin: 0 0 5px;">Rating Algorithms
     Visualizer</h3>
 <div class="algo-btns btns">
     <button id="Elo" onclick="changeData(event, 'elo')" class="btn btn-primary hover">
@@ -103,7 +110,7 @@
 
     }
 
-    function changeData(event, algo){
+    function changeData(event, algo) {
         if (algo === "glicko2") {
             dataOri = glicko2_data
         } else if (algo === "trueskill") {
